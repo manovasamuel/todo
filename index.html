@@ -4,12 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="todo.css" />
-    <title>Document</title>
+    <script defer src="todo.js"></script>
+    <title>To-do-list</title>
   </head>
   <body>
-    <input type="text" id="todoValue" placeholder="Enter a todo" />
-    <button class="addbtn">+</button>
-
-    <script src="todo.js"></script>
+    <h1>To-do-list</h1>
+    <div class="todo_container">
+      <div id="customAlert" class="custom-alert"></div>
+      <div class="top-conatiner">
+        <input type="text" class="input_val" placeholder="Enter your Task" />
+        <button class="addbtn">+</button>
+      </div>
+      <div class="list_container">
+        <ul></ul>
+      </div>
+      <div class="bottom-container">
+        <button class="clear">Clear</button>
+      </div>
+    </div>
   </body>
 </html>
